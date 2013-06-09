@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>return (to_life); /* The Epitech Portal */</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+
+    <script src="../js/jquery/jquery.min.js"></script>
+    <script src="../js/jquery/jquery.cookie.js"></script>
+    <script src="../js/api/api.js" type="text/javascript"></script>
+    <script src="../js/api/auth.js" type="text/javascript"></script>
+    <script>
+      if (!isLogged()) {
+        window.location.replace("login");
+      }
+    </script>
+
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet/less" type="text/css" href="../less/style.less" />
+
+    <script src="../js/less.js" type="text/javascript"></script>
+  </head>
+  <body>
+
+    <div id="main">
+      <div class="row-fluid">
+
+        <aside id="menu">
+
+	  <figure id="me">
+	    <img src="../img/users/default.png" alt="user" class="profile_picture">
+	    <figurecaption>
+	      <span id="my_login"></span>
+	      <nav>
+		<ul>
+		  <li><a href="/dashboard/preferences"><img class="icon" src="../img/icons/cogwheel.png" alt="Settings"></a></li>
+		  <li><a href="/users/"><img class="icon" src="../img/icons/user.png" alt="My profile"></a></li>
+		  <li><a href="/logout" class="button_logout"><img class="icon" src="../img/icons/power.png" alt="Logout"></a></li>
+		</ul>
+	      </nav>
+	    </figurecaption>
+	  </figure> <!-- me -->
+          <nav>
+
+            <a href=".">
+              <div class="button">
+		<img class="icon" alt="Home" src="../img/icons/home.png" />
+                <span class="content hidden_phone">Home</span>
+              </div>
+            </a>
+
+            <a href="/search">
+              <div class="button">
+                <img class="icon" alt="Search" src="../img/icons/search.png" />
+                <span class="content hidden_phone">Search</span>
+              </div>
+            </a>
+
+            <a href="/events">
+              <div class="button">
+                <img class="icon" alt="Events" src="../img/icons/calendar.png" />
+                <span class="content hidden_phone">Events</span>
+              </div>
+            </a>
+
+            <a href="/about">
+              <div class="button">
+                <img class="icon" alt="About" src="../img/icons/circle_info.png" />
+                <span class="content hidden_phone">About</span>
+              </div>
+            </a>
+
+            <div class="separator">
+              <img class="icon" alt="My Entities" src="../img/icons/show_big_thumbnails.png" />
+              <span class="content hidden_phone">My Entities</span>
+            </div>
+
+            <a href="/entities">
+              <div class="button">
+                <img class="icon" alt="Entities" src="../img/icons/show_thumbnails.png" />
+                <span class="content hidden_phone">All Entities</span>
+              </div>
+            </a>
+
+            <a href="" class="entity">
+              <div class="button">
+                <img class="icon" alt="" class="" src="../img/icons/drink.png" />
+                <span class="content hidden_phone"></span>
+              </div>
+            </a>
+
+            <div class="separator">
+              <img class="icon" alt="Dashboard" src="../img/icons/dashboard.png" />
+              <span class="content hidden_phone">Dashboard</span>
+            </div>
+
+            <a href="/users/">
+              <div class="button">
+                <img class="icon" alt="My profile" src="../img/icons/user.png" />
+                <span class="content hidden_phone">Profile</span>
+              </div>
+            </a>
+
+            <a href="/dashboard/articles/new">
+              <div class="button">
+                <img class="icon" alt="Add-Article" src="../img/icons/edit.png" />
+                <span class="content hidden_phone">Exprime</span>
+              </div>
+            </a>
+
+            <a href="/dashboard/gossips/new">
+              <div class="button">
+                <img class="icon" alt="Gossip" src="../img/icons/fire.png" />
+                <span class="content hidden_phone">Gossip</span>
+              </div>
+            </a>
+
+            <a href="/dashboard/preferences">
+              <div class="button">
+                <img class="icon" alt="Preferences" src="../img/icons/cogwheels.png" />
+                <span class="content hidden_phone">Preferences</span>
+              </div>
+            </a>
+
+            <a href="/logout" class="button_logout">
+              <div class="button">
+                <img class="icon" alt="Logout" src="../img/icons/power.png" />
+                <span class="content hidden_phone">Logout</span>
+              </div>
+            </a>
+
+            </nav>
+          </aside> <!-- menu -->
+
+        <div id="content">
+	</div><!-- content -->
+
+      </div> <!-- row -->
+    </div> <!-- main -->
+      
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/pages/home.js"></script>
+    <script src="../js/pages/menu.js"></script>
+
+  </body>
+</html>
